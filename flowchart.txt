@@ -1,0 +1,49 @@
+1. Importing the packages
+2. Exploring the dataset 
+	- Brain Tumor Data
+3. Single Image Super Resolution using Pretrained GAN Pytorch 
+	- Make Layer of blocks
+	- Class Function for Residual Block
+ 		- Super Residual block
+	- Class Residual Dense Block
+	- Loading the pre-trained model
+	- Appending CPU as device for modelling
+	- Appending the model 
+	- Reading the image 
+		- Conversion to torch numpy
+		- processsing the LR to HR using model
+		- saving the HR imageto folder
+4. Exploring the saved dataset of HR images
+5. Image processing
+	- using ImageDataGenerator 
+		- Re-scaling the Image
+		- Shear Transformation
+		- Zooming the Image
+		- Horizontal Flip 
+		- Reshaping the Image 
+6. Building the model 
+	- ResNet101
+	- VGG19
+	- Xception
+	- MobileNet
+	- Xception with MobileNet
+7. Training the model
+8. Dumping the model
+
+Flask Framework
+----------------
+
+7. Flask Framework with Sqlite for signup and signin
+8. Importing the packages
+9. User Upload an image for analysis
+10. The given input is preprocessed 
+11. The trained model is used for predicting the result
+12. Final Outcome is display
+
+Extension
+----------
+In the base paper the author mentioned to use Single Image Super Resolution using GAN model the dataset for conversion
+of Low Resolution image to High Resolution Images and then usinf Image Data Generator for feature extraction of an 
+image to use VGG19 and ResNet101 model for analysis and achieved 99% and 100% of testing accuracy respectively,
+However, we can further enhance the performance by exploring Xception, MobileNet and MobileNet with Xception Transfer Learning model,from which mobilenet got 100% testing accuracy, 
+As an extension we can build the front end using the flask framework for user testing and with user authentication.

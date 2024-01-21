@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Register</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/assets/css/style.css">
+	<style>
+		a:link, a:visited {
+		  background-color: rgb(36, 35, 46);
+		  color: rgb(245, 243, 243);
+		  border: 2px solid rgb(235, 238, 238);
+		  padding: 10px 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+		
+		a:hover, a:active {
+		  background-color: rgb(36, 35, 46);
+		  color: white;
+		}
+		</style>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Validation Form</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-7">
+					<div class="login-wrap">
+                
+              
+                    <form action="{{ url_for('predict1') }}" method="POST">
+                      <h1 style="color: white;">Write the OTP here!</h1>
+                      <div style="text-align: center;">
+                        <input type="text" name="message" required="required" style="font-size: 12pt; width: 200px; background-color: #f2f2f2; color: #333;">
+                      </div>
+                      <br />
+                      <div class="p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                      </div>
+                    </form>
+                    
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/assets/js/jquery.min.js"></script>
+  <script src="static/assets/js/popper.js"></script>
+  <script src="static/assets/js/bootstrap.min.js"></script>
+  <script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
+
